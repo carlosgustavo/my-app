@@ -1,0 +1,76 @@
+// Definindo variáveis para cores e fontes
+$primary-color: #007bff;
+$secondary-color: #0056b3;
+$input-border-color: #ccc;
+$input-focus-border-color: $primary-color;
+$background-color: #f9f9f9;
+$button-background: $primary-color;
+$button-hover-background: $secondary-color;
+$font-color: #333;
+$border-radius: 5px;
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $background-color;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: $font-color;
+    }
+
+    input {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid $input-border-color;
+      border-radius: $border-radius;
+      transition: border-color 0.3s;
+      margin-top: 10px;
+
+      &:focus {
+        border-color: $input-focus-border-color;
+        outline: none;
+        box-shadow: 0 0 5px rgba($primary-color, 0.5);
+      }
+    }
+  }
+
+  button {
+    padding: 0.8rem;
+    background-color: $button-background;
+    color: white;
+    border: none;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $button-hover-background;
+    }
+  }
+}
+
+// Estilos para dispositivos móveis (responsividade)
+@media (max-width: 480px) {
+  form {
+    width: 90%;
+    padding: 15px;
+
+    input, button {
+      font-size: 0.9rem;
+    }
+  }
+}

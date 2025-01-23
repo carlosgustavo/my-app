@@ -24,8 +24,10 @@ const EditPage = () => {
   if (!dragon) return <p>Loading...</p>;
 
   return (
-    <div>
-      <h1>Edit Dragon</h1>
+    <div style={{ padding: "30px" }}>
+      <div>
+        <h1>Editar Dragão</h1>
+      </div>
       <DragonForm initialData={dragon} onSubmit={handleUpdate} />
     </div>
   );

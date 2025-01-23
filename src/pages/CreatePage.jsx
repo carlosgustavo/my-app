@@ -14,7 +14,9 @@ const CreatePage = () => {
 
   return (
     <div>
-      <h1>Create Dragon</h1>
+      <div style={{ padding: "30px" }}>
+        <h1>Criar Dragão</h1>
+      </div>
       <DragonForm onSubmit={handleCreate} />
     </div>
   );

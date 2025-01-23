@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { useDragons } from "../context/DragonContext";
+import React, { useState } from "react";
+import './DragonForm.scss'; // Importando o arquivo SCSS
 
 const DragonForm = ({ initialData = {}, onSubmit }) => {
   const [formData, setFormData] = useState({
@@ -23,8 +22,9 @@ const DragonForm = ({ initialData = {}, onSubmit }) => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>Name:</label>
+        <label htmlFor="name">Name:</label>
         <input
+          id="name"
           type="text"
           name="name"
           value={formData.name}
@@ -33,8 +33,9 @@ const DragonForm = ({ initialData = {}, onSubmit }) => {
         />
       </div>
       <div>
-        <label>Type:</label>
+        <label htmlFor="type">Type:</label>
         <input
+          id="type"
           type="text"
           name="type"
           value={formData.type}
