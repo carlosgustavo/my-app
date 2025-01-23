@@ -1,0 +1,53 @@
+// Configurações globais
+$font-family-base: "Roboto", Arial, sans-serif;
+$font-size-base: 16px;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$line-height-base: 1.5;
+$color-text-base: #333;
+
+// Aplicação de estilos globais
+*
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-base; // Define o tamanho base de 16px
+  line-height: $line-height-base; // Espaçamento entre linhas
+}
+
+body {
+  font-family: $font-family-base; // Fonte padrão
+  font-weight: $font-weight-normal; // Peso padrão
+  color: $color-text-base; // Cor do texto
+  background-color: #f9f9f9; // Cor de fundo global
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold; // Pesos mais altos para títulos
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button {
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+}

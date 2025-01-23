@@ -1,76 +1,134 @@
-// Definindo variáveis para cores e fontes
-$primary-color: #007bff;
-$secondary-color: #0056b3;
-$input-border-color: #ccc;
-$input-focus-border-color: $primary-color;
-$background-color: #f9f9f9;
-$button-background: $primary-color;
-$button-hover-background: $secondary-color;
-$font-color: #333;
-$border-radius: 5px;
-
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
+.dragon-form {
+  max-width: 600px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: $background-color;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   div {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 1.5rem;
 
     label {
+      display: block;
       font-size: 1rem;
-      font-weight: bold;
+      font-weight: 600;
+      color: #333;
       margin-bottom: 0.5rem;
-      color: $font-color;
+
+      svg {
+        margin-left: 0.5rem;
+        color: #007bff;
+      }
     }
 
     input {
-      padding: 0.8rem;
+      width: 100%; /* Garantindo que todos os inputs fiquem do mesmo tamanho */
+      padding: 0.75rem;
       font-size: 1rem;
-      border: 1px solid $input-border-color;
-      border-radius: $border-radius;
-      transition: border-color 0.3s;
-      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      outline: none;
+      box-sizing: border-box;
+      transition:
+        border-color 0.3s,
+        box-shadow 0.3s;
 
       &:focus {
-        border-color: $input-focus-border-color;
-        outline: none;
-        box-shadow: 0 0 5px rgba($primary-color, 0.5);
+        border-color: #007bff;
+        box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+      }
+
+      &:disabled {
+        background-color: #e9ecef;
+        cursor: not-allowed;
+      }
+
+      &::placeholder {
+        color: #aaa;
+      }
+    }
+
+    .history-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        flex: 1; /* Mantém a largura consistente mesmo em layouts flex */
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #c82333;
+        }
+
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+
+    .add-history-button {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #218838;
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
       }
     }
   }
 
-  button {
-    padding: 0.8rem;
-    background-color: $button-background;
+  .save-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: $border-radius;
-    font-size: 1rem;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition:
+      background-color 0.3s,
+      transform 0.2s;
 
     &:hover {
-      background-color: $button-hover-background;
+      background-color: #0056b3;
     }
-  }
-}
 
-// Estilos para dispositivos móveis (responsividade)
-@media (max-width: 480px) {
-  form {
-    width: 90%;
-    padding: 15px;
+    &:active {
+      transform: scale(0.98);
+    }
 
-    input, button {
-      font-size: 0.9rem;
+    &:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
     }
   }
 }

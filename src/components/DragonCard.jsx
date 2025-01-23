@@ -42,13 +42,13 @@ const DragonCard = ({
 
         <div className="dragon-card__body__actions">
           <button
-            className="dragon-card__body__button"
+            className="dragon-card__body__button edit"
             onClick={() => onEdit(id)}
           >
             Editar
           </button>
           <button
-            className="dragon-card__body__button"
+            className="dragon-card__body__button delete"
             onClick={() => onDelete(id)}
           >
             Deletar

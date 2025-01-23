@@ -90,6 +90,26 @@
       border-radius: 4px;
       cursor: pointer;
       transition: background-color 0.3s;
+      
+
+
+      &.edit {
+        background-color: #6085a2;
+        color: white;
+
+        &:hover {
+          background-color: #6085a290;
+        }
+      }
+
+      &.delete {
+        background-color: #f44336;
+        color: white;
+
+        &:hover {
+          background-color: #e5383593;
+        }
+      }
     }
   }
 }
