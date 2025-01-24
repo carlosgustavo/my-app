@@ -30,6 +30,10 @@ yarn install ou npm install
 ### Execução de aplicação
 yarn start ou npm start
 
+### Login de acesso
+Obs: Opcional
+email:123 senha:123 
+
 ### Execução de testes
 yarn test ou npm test
 
