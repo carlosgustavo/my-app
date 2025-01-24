@@ -43,11 +43,3 @@ Realize suas alterações e commit (git commit -am 'Adicionando minha feature').
 Envie para o seu fork (git push origin minha-feature).
 Abra um Pull Request no repositório original.
 
-
-
-
-
-
-
-
-
