@@ -1,4 +1,4 @@
-@import "../styles/variables.scss"; // Importa as variáveis de cor
+@import "../styles/variables.scss";
 
 .home-page {
   padding: 30px;
@@ -36,6 +36,6 @@
   h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: $color-neutral-dark; // Cor do título usando variável
+    color: $color-neutral-dark;
   }
 }

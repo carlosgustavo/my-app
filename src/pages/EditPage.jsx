@@ -18,7 +18,7 @@ const EditPage = () => {
 
   const handleUpdate = async (updatedDragon) => {
     await updateDragon(id, updatedDragon);
-    navigate("/");
+    navigate("/home");
   };
 
   if (!dragon) return <p style={{ margin: 20 }}>Carregando Dragons...</p>;

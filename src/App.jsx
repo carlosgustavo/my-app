@@ -1,18 +1,24 @@
-import React from "react";
+
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { DragonProvider } from "./context/DragonContext";
-import HomePage from "./pages/HomePage";
-import CreatePage from "./pages/CreatePage";
-import EditPage from "./pages/EditPage";
+
+const HomePage = React.lazy(() => import("./pages/HomePage"));
+const CreatePage = React.lazy(() => import("./pages/CreatePage"));
+const EditPage = React.lazy(() => import("./pages/EditPage"));
+const LoginPage = React.lazy(() => import("./pages/LoginPage"));
 
 const App = () => (
   <DragonProvider>
     <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/new" element={<CreatePage />} />
-        <Route path="/edit/:id" element={<EditPage />} />
-      </Routes>
+      <Suspense fallback={<div>Carregando Dragons...</div>}>
+        <Routes>
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/new" element={<CreatePage />} />
+          <Route path="/edit/:id" element={<EditPage />} />
+          <Route path="/" element={<LoginPage />} />
+        </Routes>
+      </Suspense>
     </Router>
   </DragonProvider>
 );

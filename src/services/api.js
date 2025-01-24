@@ -9,7 +9,6 @@ export const DragonProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Fetch initial dragons
   useEffect(() => {
     const fetchDragons = async () => {
       try {

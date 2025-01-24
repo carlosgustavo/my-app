@@ -9,7 +9,7 @@ const CreatePage = () => {
 
   const handleCreate = async (dragon) => {
     await addDragon(dragon);
-    navigate("/");
+    navigate("/home");
   };
 
   return (

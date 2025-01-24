@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaDragon } from "react-icons/fa";
-import "./DragonForm.scss"; // Importando o arquivo SCSS
+import "./DragonForm.scss";
 
 const DragonForm = ({ initialData = {}, onSubmit }) => {
   const [formData, setFormData] = useState({

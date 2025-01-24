@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useDragons } from "../context/DragonContext";
-import DragonCard from "../components/DragonCard"; // Importando o DragonCard
+import DragonCard from "../components/DragonCard";
 import "./HomePage.scss";
 
 const HomePage = () => {
