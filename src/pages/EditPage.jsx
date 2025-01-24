@@ -21,7 +21,7 @@ const EditPage = () => {
     navigate("/");
   };
 
-  if (!dragon) return <p>Loading...</p>;
+  if (!dragon) return <p style={{ margin: 20 }}>Carregando Dragons...</p>;
 
   return (
     <div style={{ padding: "30px" }}>

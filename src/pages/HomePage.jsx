@@ -8,7 +8,7 @@ const HomePage = () => {
   const { dragons, deleteDragon, loading, error } = useDragons();
   const navigate = useNavigate();
 
-  if (loading) return <p>Loading dragons...</p>;
+  if (loading) return <p style={{ margin: 20 }}>Carregando Dragons...</p>;
   if (error) return <p>Error: {error}</p>;
 
   return (

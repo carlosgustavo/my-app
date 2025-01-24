@@ -43,7 +43,7 @@ const DragonForm = ({ initialData = {}, onSubmit }) => {
     <form className="dragon-form" onSubmit={handleSubmit}>
       <div>
         <label>
-          Name <FaDragon />
+          Nome <FaDragon />
         </label>
         <input
           type="text"
@@ -54,7 +54,7 @@ const DragonForm = ({ initialData = {}, onSubmit }) => {
         />
       </div>
       <div>
-        <label>Type</label>
+        <label>Tipo</label>
         <input
           type="text"
           name="type"
@@ -64,18 +64,18 @@ const DragonForm = ({ initialData = {}, onSubmit }) => {
         />
       </div>
       <div>
-        <label>Histories:</label>
+        <label>Histórias</label>
         {formData.histories.map((history, index) => (
           <div key={index} className="history-actions">
             <input
               type="text"
               value={history}
               onChange={(e) => handleHistoryChange(index, e.target.value)}
-              placeholder={`History ${index + 1}`}
+              placeholder={`História ${index + 1}`}
               required
             />
             <button type="button" onClick={() => handleRemoveHistory(index)}>
-              Remove
+              Remover
             </button>
           </div>
         ))}
@@ -84,11 +84,11 @@ const DragonForm = ({ initialData = {}, onSubmit }) => {
           className="add-history-button"
           onClick={handleAddHistory}
         >
-          Add History
+          Adicionar história
         </button>
       </div>
       <button type="submit" className="save-button">
-        Save
+        Salvar
       </button>
     </form>
   );

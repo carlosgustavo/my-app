@@ -1,6 +1,8 @@
+@import "../styles/variables.scss";
+
 .dragon-card {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: $color-neutral-light;
+  border: 1px solid $color-border;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -14,12 +16,12 @@
   }
 
   &__header {
-    background-color: #0078d4;
+    background-color: $color-blue-primary;
     color: #fff;
     padding: 16px;
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
+    flex-direction: column;
+    align-items: center;
 
     &__name {
       display: flex;
@@ -34,7 +36,7 @@
     &__type {
       font-size: 1rem;
       font-weight: normal;
-      background-color: #005a9e;
+      background-color: $color-blue-secondary;
       padding: 4px 8px;
       border-radius: 4px;
       margin-top: 4px;
@@ -51,7 +53,7 @@
 
     &__date {
       font-size: 0.875rem;
-      color: #666;
+      color: $color-neutral-gray;
       margin-bottom: 8px;
     }
 
@@ -62,8 +64,8 @@
 
       &__history {
         font-size: 1rem;
-        color: #333;
-        background-color: #eef6fc;
+        color: $color-neutral-dark;
+        background-color: $color-blue-light;
         padding: 8px;
         margin-bottom: 4px;
         border-radius: 4px;
@@ -72,7 +74,7 @@
 
     &__no-history {
       font-size: 1rem;
-      color: #888;
+      color: $color-neutral-gray-light;
       text-align: center;
     }
 
@@ -90,24 +92,22 @@
       border-radius: 4px;
       cursor: pointer;
       transition: background-color 0.3s;
-      
-
 
       &.edit {
-        background-color: #6085a2;
+        background-color: $color-button-edit;
         color: white;
 
         &:hover {
-          background-color: #6085a290;
+          background-color: $color-button-edit-hover;
         }
       }
 
       &.delete {
-        background-color: #f44336;
+        background-color: $color-red-primary;
         color: white;
 
         &:hover {
-          background-color: #e5383593;
+          background-color: $color-red-hover;
         }
       }
     }

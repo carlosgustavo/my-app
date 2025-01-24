@@ -1,9 +1,11 @@
+@import "../styles/variables.scss";
+
 .dragon-form {
   max-width: 600px;
   margin: 0 auto;
   padding: 2rem;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: $color-neutral-light;
+  border: 1px solid $color-border;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
@@ -14,17 +16,17 @@
       display: block;
       font-size: 1rem;
       font-weight: 600;
-      color: #333;
+      color: $color-neutral-dark;
       margin-bottom: 0.5rem;
 
       svg {
         margin-left: 0.5rem;
-        color: #007bff;
+        color: $color-blue-primary;
       }
     }
 
     input {
-      width: 100%; /* Garantindo que todos os inputs fiquem do mesmo tamanho */
+      width: 100%;
       padding: 0.75rem;
       font-size: 1rem;
       border: 1px solid #ccc;
@@ -36,7 +38,7 @@
         box-shadow 0.3s;
 
       &:focus {
-        border-color: #007bff;
+        border-color: $color-blue-primary;
         box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
       }
 
@@ -46,7 +48,7 @@
       }
 
       &::placeholder {
-        color: #aaa;
+        color: $color-neutral-gray;
       }
     }
 
@@ -56,13 +58,13 @@
       gap: 1rem;
 
       input {
-        flex: 1; /* Mantém a largura consistente mesmo em layouts flex */
+        flex: 1;
       }
 
       button {
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
-        background-color: #dc3545;
+        background-color: $color-red-primary;
         color: white;
         border: none;
         border-radius: 4px;
@@ -70,7 +72,7 @@
         transition: background-color 0.3s;
 
         &:hover {
-          background-color: #c82333;
+          background-color: $color-red-hover;
         }
 
         &:active {
@@ -83,7 +85,7 @@
       padding: 0.75rem 1.5rem;
       font-size: 1rem;
       font-weight: 600;
-      background-color: #28a745;
+      background-color: $color-green-primary;
       color: white;
       border: none;
       border-radius: 4px;
@@ -91,7 +93,7 @@
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: #218838;
+        background-color: $color-green-hover;
       }
 
       &:active {
@@ -109,7 +111,7 @@
     width: 100%;
     padding: 1rem;
     font-size: 1.2rem;
-    background-color: #007bff;
+    background-color: $color-blue-primary;
     color: white;
     border: none;
     border-radius: 8px;
@@ -119,7 +121,7 @@
       transform 0.2s;
 
     &:hover {
-      background-color: #0056b3;
+      background-color: $color-blue-secondary;
     }
 
     &:active {
