@@ -35,19 +35,7 @@ yarn test ou npm test
 ### Rodando o Build para Produção
 yarn build ou npm run build
 
-### Estrutura de Pastas
-my-app/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
-│   │   └── TestComponent.js
-│   ├── context/
-│   │   └── DragonContext.js
-│   ├── App.js
-│   └── index.js
-├── package.json
-└── README.md
+
 
 ### Contribuindo para o Projeto
 Faça um fork deste repositório.
