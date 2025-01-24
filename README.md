@@ -23,6 +23,17 @@ git clone https://github.com/seu-usuario/my-app.git
 ### Navegue até a pasta do projeto
 cd my-app
 
+### Instale as dependências
+yarn install ou npm install
+
+### Executando a aplicação
+yarn start ou npm start
+
+### Rodando o Build para Produção
+yarn build ou npm run build
+
+
+
 
 
 
