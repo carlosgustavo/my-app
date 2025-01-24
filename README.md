@@ -15,10 +15,10 @@ Este é um projeto em React configurado com Jest para testes. O projeto simula c
 
 Siga os passos abaixo para rodar o projeto em sua máquina local:
 
-### 1. Clone o repositório
+### Instruções
 
 ```bash
-git clone https://github.com/seu-usuario/my-app.git
+### Clone o repositório: git clone https://github.com/seu-usuario/my-app.git
 
 ### Navegue até a pasta do projeto
 cd my-app
