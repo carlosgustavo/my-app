@@ -26,11 +26,37 @@ cd my-app
 ### Instale as dependências
 yarn install ou npm install
 
-### Executando a aplicação
+### Execução de aplicação
 yarn start ou npm start
+
+### Execução de testes
+yarn test ou npm test
 
 ### Rodando o Build para Produção
 yarn build ou npm run build
+
+### Estrutura de Pastas
+my-app/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── TestComponent.js
+│   ├── context/
+│   │   └── DragonContext.js
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── README.md
+
+### Contribuindo para o Projeto
+Faça um fork deste repositório.
+Crie uma nova branch (git checkout -b minha-feature).
+Realize suas alterações e commit (git commit -am 'Adicionando minha feature').
+Envie para o seu fork (git push origin minha-feature).
+Abra um Pull Request no repositório original.
+
+
 
 
 
