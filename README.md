@@ -18,7 +18,8 @@ Siga os passos abaixo para rodar o projeto em sua máquina local:
 ### Instruções
 
 ```bash
-### Clone o repositório: git clone https://github.com/seu-usuario/my-app.git
+### Clone o repositório
+git clone https://github.com/seu-usuario/my-app.git
 
 ### Navegue até a pasta do projeto
 cd my-app
@@ -34,8 +35,6 @@ yarn test ou npm test
 
 ### Rodando o Build para Produção
 yarn build ou npm run build
-
-
 
 ### Contribuindo para o Projeto
 Faça um fork deste repositório.
