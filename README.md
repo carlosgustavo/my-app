@@ -20,3 +20,10 @@ Siga os passos abaixo para rodar o projeto em sua máquina local:
 ```bash
 git clone https://github.com/seu-usuario/my-app.git
 
+### Navegue até a pasta do projeto
+cd my-app
+
+
+
+
+
