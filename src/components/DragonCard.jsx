@@ -9,7 +9,6 @@ const DragonCard = ({
   type,
   createdAt,
   histories,
-  onView,
   onEdit,
   onDelete,
 }) => {
@@ -65,7 +64,6 @@ DragonCard.propTypes = {
   type: PropTypes.string.isRequired,
   createdAt: PropTypes.string.isRequired,
   histories: PropTypes.arrayOf(PropTypes.string),
-  onView: PropTypes.func.isRequired,
   onEdit: PropTypes.func.isRequired,
   onDelete: PropTypes.func.isRequired,
 };
